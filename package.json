@@ -7,5 +7,19 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Prince G Addai",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "fast-csv": "^4.3.6",
+    "mongo": "^0.1.0",
+    "mongodb": "^4.2.1",
+    "mongoose": "^4.13.21",
+    "mongoose-currency": "^0.2.0",
+    "morgan": "^1.10.0",
+    "pg": "^8.7.1"
+  }
 }
