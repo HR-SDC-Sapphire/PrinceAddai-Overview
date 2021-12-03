@@ -64,7 +64,7 @@ const simpleLoader = (tableName, table2) => {
 }
 
 // sequence of etl
-// simpleLoader('products');
+simpleLoader('products');
 // simpleLoader('features', 'products');
 // simpleLoader('styles', 'products');
 // simpleLoader('skus', 'styles');
