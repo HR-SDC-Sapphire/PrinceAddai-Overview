@@ -113,12 +113,13 @@ app.get('/products/:product_id', (req, res) => {
 
 // // get related products for a particular product
 app.get('/products/:product_id/related', (req, res) => {
-  let current_product_id = req.params.product_id
+  let current_product_id = Number(req.params.product_id)
   RelatedProducts
     .find({ current_product_id})
     .limit(10)
     .then(products => {
-      let newProducts = products.map(product => product.related_product_id)
+      let newProducts = products.map(product => product.related_product_id);
+      console.log(newProducts);
       res.send([...new Set(newProducts)]);
     })
     .catch(err => {
