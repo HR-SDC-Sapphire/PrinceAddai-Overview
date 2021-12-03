@@ -119,7 +119,6 @@ app.get('/products/:product_id/related', (req, res) => {
     .limit(10)
     .then(products => {
       let newProducts = products.map(product => product.related_product_id);
-      console.log(newProducts);
       res.send([...new Set(newProducts)]);
     })
     .catch(err => {
